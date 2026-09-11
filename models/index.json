@@ -1,0 +1,153 @@
+{
+  "tep": {
+    "models": [
+      {
+        "seed": 7,
+        "task": "task_1",
+        "path": "tep/seed7/task_1",
+        "paper_accuracy_percent": 90.76388888888889
+      },
+      {
+        "seed": 7,
+        "task": "task_2",
+        "path": "tep/seed7/task_2",
+        "paper_accuracy_percent": 81.11111111111111
+      },
+      {
+        "seed": 7,
+        "task": "task_3",
+        "path": "tep/seed7/task_3",
+        "paper_accuracy_percent": 79.44444444444444
+      },
+      {
+        "seed": 7,
+        "task": "task_4",
+        "path": "tep/seed7/task_4",
+        "paper_accuracy_percent": 76.38888888888889
+      },
+      {
+        "seed": 103,
+        "task": "task_1",
+        "path": "tep/seed103/task_1",
+        "paper_accuracy_percent": 89.51388888888889
+      },
+      {
+        "seed": 103,
+        "task": "task_2",
+        "path": "tep/seed103/task_2",
+        "paper_accuracy_percent": 76.31944444444444
+      },
+      {
+        "seed": 103,
+        "task": "task_3",
+        "path": "tep/seed103/task_3",
+        "paper_accuracy_percent": 80.48611111111111
+      },
+      {
+        "seed": 103,
+        "task": "task_4",
+        "path": "tep/seed103/task_4",
+        "paper_accuracy_percent": 76.11111111111111
+      },
+      {
+        "seed": 904,
+        "task": "task_1",
+        "path": "tep/seed904/task_1",
+        "paper_accuracy_percent": 92.29166666666667
+      },
+      {
+        "seed": 904,
+        "task": "task_2",
+        "path": "tep/seed904/task_2",
+        "paper_accuracy_percent": 97.15277777777777
+      },
+      {
+        "seed": 904,
+        "task": "task_3",
+        "path": "tep/seed904/task_3",
+        "paper_accuracy_percent": 74.16666666666667
+      },
+      {
+        "seed": 904,
+        "task": "task_4",
+        "path": "tep/seed904/task_4",
+        "paper_accuracy_percent": 75.97222222222221
+      },
+      {
+        "seed": 2026,
+        "task": "task_1",
+        "path": "tep/seed2026/task_1",
+        "paper_accuracy_percent": 87.56944444444444
+      },
+      {
+        "seed": 2026,
+        "task": "task_2",
+        "path": "tep/seed2026/task_2",
+        "paper_accuracy_percent": 97.08333333333333
+      },
+      {
+        "seed": 2026,
+        "task": "task_3",
+        "path": "tep/seed2026/task_3",
+        "paper_accuracy_percent": 76.94444444444444
+      },
+      {
+        "seed": 2026,
+        "task": "task_4",
+        "path": "tep/seed2026/task_4",
+        "paper_accuracy_percent": 76.94444444444444
+      },
+      {
+        "seed": 3407,
+        "task": "task_1",
+        "path": "tep/seed3407/task_1",
+        "paper_accuracy_percent": 90.34722222222223
+      },
+      {
+        "seed": 3407,
+        "task": "task_2",
+        "path": "tep/seed3407/task_2",
+        "paper_accuracy_percent": 78.26388888888889
+      },
+      {
+        "seed": 3407,
+        "task": "task_3",
+        "path": "tep/seed3407/task_3",
+        "paper_accuracy_percent": 74.09722222222223
+      },
+      {
+        "seed": 3407,
+        "task": "task_4",
+        "path": "tep/seed3407/task_4",
+        "paper_accuracy_percent": 76.73611111111111
+      }
+    ],
+    "paper_summary": {
+      "runs": 5,
+      "run_results": [
+        {
+          "seed": 7,
+          "accuracy_percent": 81.92708333333334
+        },
+        {
+          "seed": 103,
+          "accuracy_percent": 80.60763888888889
+        },
+        {
+          "seed": 904,
+          "accuracy_percent": 84.89583333333334
+        },
+        {
+          "seed": 2026,
+          "accuracy_percent": 84.63541666666667
+        },
+        {
+          "seed": 3407,
+          "accuracy_percent": 79.86111111111111
+        }
+      ],
+      "mean_percent": 82.38541666666667,
+      "sample_std_percent": 2.2971380917182262
+    }
+  }
+}

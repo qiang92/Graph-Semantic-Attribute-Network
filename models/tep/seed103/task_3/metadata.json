@@ -1,0 +1,224 @@
+{
+  "dataset": "TEP",
+  "task": "task_3",
+  "seed": 103,
+  "encoder": {
+    "input_dim": 52,
+    "hidden": 52,
+    "latent": 104
+  },
+  "preprocessing": {
+    "kind": "per_record_trailing_SMA",
+    "window": 3,
+    "initial_rows": "first window-1 rows unchanged",
+    "standardization": "none"
+  },
+  "features": "concatenate latent signal embedding first, preprocessed signal second",
+  "attribute_heads": [
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4320.0,
+        1440.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        3840.0,
+        1920.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4320.0,
+        1440.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        5280.0,
+        480.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        3840.0,
+        1920.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4800.0,
+        960.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4800.0,
+        960.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        2400.0,
+        3360.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        3840.0,
+        1920.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4320.0,
+        1440.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4800.0,
+        960.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4800.0,
+        960.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4320.0,
+        1440.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4320.0,
+        1440.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4800.0,
+        960.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        5280.0,
+        480.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        5280.0,
+        480.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        3840.0,
+        1920.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4800.0,
+        960.0
+      ]
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": 0.5,
+      "epsilon": 1.0313223356206436e-05,
+      "class_count": [
+        4800.0,
+        960.0
+      ]
+    }
+  ],
+  "class_names": {
+    "0": "F1",
+    "1": "F2",
+    "2": "F3",
+    "3": "F4",
+    "4": "F5",
+    "5": "F6",
+    "6": "F7",
+    "7": "F8",
+    "8": "F9",
+    "9": "F10",
+    "10": "F11",
+    "11": "F12",
+    "12": "F13",
+    "13": "F14",
+    "14": "F15"
+  },
+  "candidate_indices": [
+    7,
+    10,
+    11
+  ],
+  "samples": 1440,
+  "sample_accuracy_percent": 80.48611111111111,
+  "macro_accuracy_percent": 80.48611111111111
+}
