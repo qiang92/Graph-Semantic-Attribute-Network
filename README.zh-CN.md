@@ -7,7 +7,7 @@
   <p><a href="#framework">方法框架</a> · <a href="#results">主要结果</a> · <a href="#quick-start">快速开始</a> · <a href="#documentation">使用文档</a> · <a href="#citation">论文引用</a></p>
 </div>
 
-**Large Language Model-Guided Graph Semantic Attribute Propagation for Zero-Shot Industrial Fault Diagnosis**  
+**[Large Language Model-Guided Graph Semantic Attribute Propagation for Zero-Shot Industrial Fault Diagnosis](https://doi.org/10.1016/j.aei.2026.105423)**  
 Fengli Shen · Yuxi Gan · Lei Zhou · Xiao Chen
 
 GSAN 通过两个模块支持零样本故障诊断。**图语义属性传播**利用语言提供的故障关系细化可解释的工程属性。**信号可靠性校准**利用已见故障上的属性预测误差，对未见故障诊断进行可靠性加权。
@@ -145,8 +145,6 @@ python run_experiment.py tpts_main --output outputs/tpts_main
 ## 论文引用
 
 Fengli Shen, Yuxi Gan, Lei Zhou, and Xiao Chen. Large language model-guided graph semantic attribute propagation for zero-shot industrial fault diagnosis. *Advanced Engineering Informatics*, **77** (2027), 105423. https://doi.org/10.1016/j.aei.2026.105423.
-
-论文于 2026 年在线发表，正式卷期年份为 **2027**，引用时请使用 2027。可下载 [CITATION.bib](CITATION.bib)，或直接使用：
 
 ```bibtex
 @article{shen2027gsan,
