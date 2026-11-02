@@ -1,0 +1,16 @@
+method,weighting,seed,accuracy
+fixed,inverse_mse,7,81.92708333333333
+fixed,inverse_mse,103,80.60763888888889
+fixed,inverse_mse,904,84.89583333333334
+fixed,inverse_mse,2026,84.63541666666666
+fixed,inverse_mse,3407,79.86111111111111
+gat,inverse_mse,7,77.84722222222223
+gat,inverse_mse,103,75.27777777777777
+gat,inverse_mse,904,76.73611111111111
+gat,inverse_mse,2026,78.125
+gat,inverse_mse,3407,80.03472222222221
+gcn,inverse_mse,7,79.6875
+gcn,inverse_mse,103,80.98958333333334
+gcn,inverse_mse,904,74.35763888888889
+gcn,inverse_mse,2026,79.27083333333334
+gcn,inverse_mse,3407,78.90625

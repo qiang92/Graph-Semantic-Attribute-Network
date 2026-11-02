@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-23",
+  "status": "local release prepared; not uploaded",
+  "license": "MIT for author code; upstream SCE MIT notice retained",
+  "recipe_startup_checks": [
+    {
+      "experiment": "tep_main",
+      "exit_code": 0
+    },
+    {
+      "experiment": "tep_base",
+      "exit_code": 0
+    },
+    {
+      "experiment": "tep_graph",
+      "exit_code": 0
+    },
+    {
+      "experiment": "tep_reliability",
+      "exit_code": 0
+    },
+    {
+      "experiment": "graph_attribute",
+      "exit_code": 0
+    },
+    {
+      "experiment": "graph_language",
+      "exit_code": 0
+    },
+    {
+      "experiment": "prototype_gcn",
+      "exit_code": 0
+    },
+    {
+      "experiment": "prototype_gat",
+      "exit_code": 0
+    },
+    {
+      "experiment": "prototype_learned_adjacency",
+      "exit_code": 0
+    },
+    {
+      "experiment": "language_deepseek",
+      "exit_code": 0
+    },
+    {
+      "experiment": "language_concise",
+      "exit_code": 0
+    },
+    {
+      "experiment": "language_nomic",
+      "exit_code": 0
+    },
+    {
+      "experiment": "beta_0",
+      "exit_code": 0
+    },
+    {
+      "experiment": "beta_0.005",
+      "exit_code": 0
+    },
+    {
+      "experiment": "beta_0.01",
+      "exit_code": 0
+    },
+    {
+      "experiment": "beta_0.02",
+      "exit_code": 0
+    },
+    {
+      "experiment": "beta_0.03",
+      "exit_code": 0
+    },
+    {
+      "experiment": "loss_attr-0p5x",
+      "exit_code": 0
+    },
+    {
+      "experiment": "loss_attr-2x",
+      "exit_code": 0
+    },
+    {
+      "experiment": "loss_reconstruction-0p1x",
+      "exit_code": 0
+    },
+    {
+      "experiment": "loss_reconstruction-10x",
+      "exit_code": 0
+    },
+    {
+      "experiment": "loss_compatibility-0p5x",
+      "exit_code": 0
+    },
+    {
+      "experiment": "loss_compatibility-2x",
+      "exit_code": 0
+    },
+    {
+      "experiment": "loss_offdiagonal-0p5x",
+      "exit_code": 0
+    },
+    {
+      "experiment": "loss_offdiagonal-2x",
+      "exit_code": 0
+    },
+    {
+      "experiment": "loss_center-0p5x",
+      "exit_code": 0
+    },
+    {
+      "experiment": "loss_center-2x",
+      "exit_code": 0
+    },
+    {
+      "experiment": "tpts_main",
+      "exit_code": 0
+    },
+    {
+      "experiment": "tpts_weighted",
+      "exit_code": 0
+    },
+    {
+      "experiment": "adapted_sce",
+      "exit_code": 0
+    },
+    {
+      "experiment": "semantic_direct",
+      "exit_code": 0
+    },
+    {
+      "experiment": "semantic_alignment",
+      "exit_code": 0
+    },
+    {
+      "experiment": "gzsfd",
+      "exit_code": 0
+    },
+    {
+      "experiment": "edges_full46",
+      "exit_code": 0
+    },
+    {
+      "experiment": "edges_expert20",
+      "exit_code": 0
+    },
+    {
+      "experiment": "edges_random20",
+      "exit_code": 0
+    }
+  ],
+  "source_parity": {
+    "recipe_parsers_passed": 36,
+    "scientific_functions_unchanged": 45,
+    "passive_export_call_excluded_from_AST_comparison": true
+  },
+  "manuscript_table_rows_checked": 34,
+  "TEP_pretrained_mean_percent": 82.38541666666667,
+  "TEP_pretrained_sample_std_percent": 2.2971380917182262,
+  "TEP_full_budget_training_replay": {
+    "TEP_full_training_seed": 904,
+    "tasks": 4,
+    "budget": 900,
+    "encoder_weights_equal": true,
+    "NB_arrays_prototypes_weights_equal": true,
+    "predictions_calibration_and_selected_epochs_equal": true
+  },
+  "TPTS_full_budget_seed42_ten_split_mean": 73.53866772917138,
+  "TPTS_ten_exported_models_match_training": true,
+  "limits": [
+    "TEP seed904 and TPTS seed42 were retrained at full budgets; all experiment families were not rerun for five seeds.",
+    "Thirty-six configurations were executed for one epoch as startup checks, separately from full-budget results.",
+    "New LLM generation and installation in a new virtual environment were not executed.",
+    "The direct semantic prototype baseline retains its recorded 120-epoch configuration; GSAN uses 900 epochs."
+  ]
+}

@@ -1,0 +1,26 @@
+seed,task,accuracy,source
+7,Mean,81.92708333333333,major_revision\experiments\multiseed_gsan\seed7\gsan_summary.json
+7,Task 1,90.76388888888889,major_revision\experiments\multiseed_gsan\seed7\gsan_summary.json
+7,Task 2,81.11111111111111,major_revision\experiments\multiseed_gsan\seed7\gsan_summary.json
+7,Task 3,79.44444444444444,major_revision\experiments\multiseed_gsan\seed7\gsan_summary.json
+7,Task 4,76.38888888888889,major_revision\experiments\multiseed_gsan\seed7\gsan_summary.json
+103,Mean,80.60763888888889,major_revision\experiments\multiseed_gsan\seed103\gsan_summary.json
+103,Task 1,89.51388888888889,major_revision\experiments\multiseed_gsan\seed103\gsan_summary.json
+103,Task 2,76.31944444444444,major_revision\experiments\multiseed_gsan\seed103\gsan_summary.json
+103,Task 3,80.48611111111111,major_revision\experiments\multiseed_gsan\seed103\gsan_summary.json
+103,Task 4,76.11111111111111,major_revision\experiments\multiseed_gsan\seed103\gsan_summary.json
+904,Mean,84.89583333333333,paper_workspace\figure2_taskc_assets\full_run_evidence\gsan_summary.json
+904,Task 1,92.29166666666667,paper_workspace\figure2_taskc_assets\full_run_evidence\gsan_summary.json
+904,Task 2,97.15277777777777,paper_workspace\figure2_taskc_assets\full_run_evidence\gsan_summary.json
+904,Task 3,74.16666666666667,paper_workspace\figure2_taskc_assets\full_run_evidence\gsan_summary.json
+904,Task 4,75.97222222222221,paper_workspace\figure2_taskc_assets\full_run_evidence\gsan_summary.json
+2026,Mean,84.63541666666666,major_revision\experiments\multiseed_gsan\seed2026\gsan_summary.json
+2026,Task 1,87.56944444444444,major_revision\experiments\multiseed_gsan\seed2026\gsan_summary.json
+2026,Task 2,97.08333333333333,major_revision\experiments\multiseed_gsan\seed2026\gsan_summary.json
+2026,Task 3,76.94444444444444,major_revision\experiments\multiseed_gsan\seed2026\gsan_summary.json
+2026,Task 4,76.94444444444444,major_revision\experiments\multiseed_gsan\seed2026\gsan_summary.json
+3407,Mean,79.86111111111111,major_revision\experiments\multiseed_gsan\seed3407\gsan_summary.json
+3407,Task 1,90.34722222222223,major_revision\experiments\multiseed_gsan\seed3407\gsan_summary.json
+3407,Task 2,78.26388888888889,major_revision\experiments\multiseed_gsan\seed3407\gsan_summary.json
+3407,Task 3,74.09722222222223,major_revision\experiments\multiseed_gsan\seed3407\gsan_summary.json
+3407,Task 4,76.73611111111111,major_revision\experiments\multiseed_gsan\seed3407\gsan_summary.json

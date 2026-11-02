@@ -1,0 +1,11 @@
+# Data preparation
+
+TEP: obtain the records from https://github.com/YKatser/CPDE/tree/master/TEP_data . Use exactly `d01.dat` through `d15.dat`, each 480 rows by 52 columns, in `data/TEP_data/`. These records contain observations collected after fault injection. The zero-shot tasks divide them by fault class, using seen-class records for training and unseen-class records for evaluation. The `_te.dat` files contain 960 observations, including 160 normal-operation samples before fault injection, so the entire file cannot be assigned the corresponding fault label. See the [TEP data description](https://ieee-dataport.org/documents/tennessee-eastman-process-data-set). Keep the directory limited to those fifteen records. The loader applies a trailing three-observation mean independently within each record, retaining its first two rows. TEP has no fitted scaler in this implementation.
+
+TPTS: obtain **Electrical Fault Detection and Classification** from https://www.kaggle.com/datasets/esathyaprakash/electrical-fault-detection-and-classification and place `classData.csv` here. Input columns are `Ia, Ib, Ic, Va, Vb, Vc`; labels are the four `G, C, B, A` columns. StandardScaler is fitted on seen-class inputs only. The raw NB-Attr baseline also uses these standardized signal inputs; “raw” distinguishes them from learned latent-plus-signal features.
+
+Measurement datasets are not bundled. Paths can be supplied with `--data-dir` or `--tpts-csv` to `run_experiment.py`. Dataset providers retain their applicable terms. Engineering attributes, task splits and fixed semantic inputs are included in the code/configuration.
+
+The primary TEP text/vector pairs are under `semantic_cache/`. Alternative texts/vectors are under `language/`. Fault order is F1–F15; the primary records retain their original IDV identifiers. TPTS class order is `0000, 1001, 0110, 1011, 0111, 1111` and attribute order is G/C/B/A. The normal class stays seen in all ten TPTS two-fault tests.
+
+`graphs/` supplies the full graph, expert-endorsed subset and the five random subset masks used in the removal comparison. Surviving weights and self-loops are retained, without renormalization. Random masks 0–4 correspond to TEP seeds 7, 103, 904, 2026 and 3407.

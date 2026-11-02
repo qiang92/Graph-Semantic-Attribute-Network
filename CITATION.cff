@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "Please cite the GSAN paper when using this code."
+title: "Large Language Model-Guided Graph Semantic Attribute Propagation for Zero-Shot Industrial Fault Diagnosis"
+type: software
+authors:
+  - family-names: Shen
+    given-names: Fengli
+  - family-names: Gan
+    given-names: Yuxi
+  - family-names: Zhou
+    given-names: Lei
+  - family-names: Chen
+    given-names: Xiao
+repository-code: "https://github.com/qiang92/Graph-Semantic-Attribute-Network"
+license: MIT
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Shen
+      given-names: Fengli
+    - family-names: Gan
+      given-names: Yuxi
+    - family-names: Zhou
+      given-names: Lei
+    - family-names: Chen
+      given-names: Xiao
+  title: "Large language model-guided graph semantic attribute propagation for zero-shot industrial fault diagnosis"
+  journal: "Advanced Engineering Informatics"
+  volume: "77"
+  start: "105423"
+  year: 2027
+  doi: "10.1016/j.aei.2026.105423"
+  url: "https://doi.org/10.1016/j.aei.2026.105423"

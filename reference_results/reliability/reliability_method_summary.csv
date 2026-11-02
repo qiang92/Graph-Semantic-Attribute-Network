@@ -1,0 +1,5 @@
+method,deployable,mean_accuracy,std_across_runs
+Inverse-MSE,True,82.38541666666666,2.2971380917182183
+Uniform,True,76.45138888888889,3.317280864519152
+Relation-conditioned MSE,True,67.64930555555556,7.0829886558296185
+Ledoit-Wolf Mahalanobis,True,33.885416666666664,1.2747950732493705

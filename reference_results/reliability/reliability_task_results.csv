@@ -1,0 +1,81 @@
+seed,task,method,accuracy,deployable
+7,1,Uniform,90.76388888888889,True
+7,1,Inverse-MSE,90.76388888888889,True
+7,1,Relation-conditioned MSE,90.76388888888889,True
+7,1,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+7,2,Uniform,82.5,True
+7,2,Inverse-MSE,81.11111111111111,True
+7,2,Relation-conditioned MSE,82.08333333333333,True
+7,2,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+7,3,Uniform,67.5,True
+7,3,Inverse-MSE,79.44444444444444,True
+7,3,Relation-conditioned MSE,58.40277777777778,True
+7,3,Ledoit-Wolf Mahalanobis,33.125,True
+7,4,Uniform,61.80555555555556,True
+7,4,Inverse-MSE,76.38888888888889,True
+7,4,Relation-conditioned MSE,76.38888888888889,True
+7,4,Ledoit-Wolf Mahalanobis,33.263888888888886,True
+103,1,Uniform,89.51388888888889,True
+103,1,Inverse-MSE,89.51388888888889,True
+103,1,Relation-conditioned MSE,89.51388888888889,True
+103,1,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+103,2,Uniform,76.18055555555556,True
+103,2,Inverse-MSE,76.31944444444444,True
+103,2,Relation-conditioned MSE,76.18055555555556,True
+103,2,Ledoit-Wolf Mahalanobis,33.47222222222222,True
+103,3,Uniform,58.54166666666667,True
+103,3,Inverse-MSE,80.48611111111111,True
+103,3,Relation-conditioned MSE,44.72222222222222,True
+103,3,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+103,4,Uniform,61.80555555555556,True
+103,4,Inverse-MSE,76.11111111111111,True
+103,4,Relation-conditioned MSE,76.18055555555556,True
+103,4,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+904,1,Uniform,92.29166666666667,True
+904,1,Inverse-MSE,92.29166666666667,True
+904,1,Relation-conditioned MSE,33.541666666666664,True
+904,1,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+904,2,Uniform,97.15277777777777,True
+904,2,Inverse-MSE,97.15277777777777,True
+904,2,Relation-conditioned MSE,65.90277777777777,True
+904,2,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+904,3,Uniform,70.13888888888889,True
+904,3,Inverse-MSE,74.16666666666667,True
+904,3,Relation-conditioned MSE,74.23611111111111,True
+904,3,Ledoit-Wolf Mahalanobis,33.541666666666664,True
+904,4,Uniform,60.55555555555555,True
+904,4,Inverse-MSE,75.97222222222221,True
+904,4,Relation-conditioned MSE,62.01388888888889,True
+904,4,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+2026,1,Uniform,87.77777777777777,True
+2026,1,Inverse-MSE,87.56944444444444,True
+2026,1,Relation-conditioned MSE,87.5,True
+2026,1,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+2026,2,Uniform,97.08333333333333,True
+2026,2,Inverse-MSE,97.08333333333333,True
+2026,2,Relation-conditioned MSE,65.83333333333333,True
+2026,2,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+2026,3,Uniform,67.56944444444444,True
+2026,3,Inverse-MSE,76.94444444444444,True
+2026,3,Relation-conditioned MSE,33.125,True
+2026,3,Ledoit-Wolf Mahalanobis,33.05555555555556,True
+2026,4,Uniform,63.19444444444444,True
+2026,4,Inverse-MSE,76.94444444444444,True
+2026,4,Relation-conditioned MSE,65.06944444444444,True
+2026,4,Ledoit-Wolf Mahalanobis,44.93055555555556,True
+3407,1,Uniform,93.54166666666667,True
+3407,1,Inverse-MSE,90.34722222222223,True
+3407,1,Relation-conditioned MSE,90.34722222222223,True
+3407,1,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+3407,2,Uniform,78.26388888888889,True
+3407,2,Inverse-MSE,78.26388888888889,True
+3407,2,Relation-conditioned MSE,63.33333333333333,True
+3407,2,Ledoit-Wolf Mahalanobis,33.33333333333333,True
+3407,3,Uniform,68.26388888888889,True
+3407,3,Inverse-MSE,74.09722222222223,True
+3407,3,Relation-conditioned MSE,40.763888888888886,True
+3407,3,Ledoit-Wolf Mahalanobis,32.98611111111111,True
+3407,4,Uniform,64.58333333333334,True
+3407,4,Inverse-MSE,76.73611111111111,True
+3407,4,Relation-conditioned MSE,77.08333333333334,True
+3407,4,Ledoit-Wolf Mahalanobis,33.33333333333333,True

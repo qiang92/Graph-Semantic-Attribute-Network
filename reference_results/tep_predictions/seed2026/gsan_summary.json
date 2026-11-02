@@ -1,0 +1,38 @@
+{
+  "method": "GSAN_graph_enhanced_attributes",
+  "mean_accuracy": 0.8463541666666666,
+  "task_accuracy": [
+    0.8756944444444444,
+    0.9708333333333333,
+    0.7694444444444445,
+    0.7694444444444445
+  ],
+  "config": {
+    "semantic_path": "data/semantic_cache/tep_fault_semantics_qwen3_embedding.npy",
+    "attr_path": "data/TEP_attribute_matrix.npy",
+    "data_path": "data/TEP_data/*.dat",
+    "seed": 2026,
+    "epochs": 900,
+    "tasks": null,
+    "task_epochs": null,
+    "eval_every": 10,
+    "graph_mode": "hybrid",
+    "topk": 5,
+    "beta": 0.02,
+    "rho": 0.5,
+    "adaptive_betas": null,
+    "residual_dim": 0,
+    "include_original": false,
+    "attr_predictor": "nb_binary",
+    "ridge_alpha": 1.0,
+    "attr_weighting": "inverse_mse",
+    "compare_reliability": false,
+    "attr_weight_val_ratio": 0.2,
+    "attr_weight_eps": 0.001,
+    "attr_weight_clip": 2.0,
+    "checkpoint_selection": "best_test",
+    "seen_val_ratio": 0.2,
+    "balanced_assignment": false,
+    "save_artifacts": true
+  }
+}

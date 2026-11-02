@@ -1,0 +1,4 @@
+name,reference,alternative,weighting,mean_difference_pp,sd_difference_pp,positive_seeds
+encoder,paper_main,nomic_base,inverse_mse,-0.9444444444444429,5.773732391210096,2
+generator,paper_main,deepseek32_primary,inverse_mse,-1.7222222222222257,3.3734072959452237,1
+prompt,paper_main,qwen14_concise,inverse_mse,-0.5833333333333315,2.8816986591978764,2

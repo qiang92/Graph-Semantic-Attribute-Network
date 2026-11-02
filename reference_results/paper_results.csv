@@ -1,0 +1,38 @@
+table,method,accuracy_percent,sample_std_percent,source,command,result_type
+tab:component_factorial,GSAN-base,78.59375,3.5494238645796496,reference_results/propagation/beta_summary.csv,tep_base,five-run training comparison
+tab:component_factorial,GSAN-R,80.62152777777779,3.019795479441333,reference_results/propagation/beta_summary.csv,tep_reliability,five-run training comparison
+tab:component_factorial,GSAN-G,79.04513888888889,2.613841980258631,reference_results/propagation/beta_summary.csv,tep_graph,five-run training comparison
+tab:component_factorial,GSAN,82.38541666666667,2.2971380917182262,reference_results/propagation/beta_summary.csv,tep_main,five-run training comparison
+tab:graph_sources,attribute,80.55555555555556,3.3432650075179264,reference_results/graph_sources.csv,graph_attribute,five-run training comparison
+tab:graph_sources,hybrid,82.38541666666666,2.2971380917182183,reference_results/graph_sources.csv,tep_main,five-run training comparison
+tab:graph_sources,semantic,78.90277777777779,3.3767115644637613,reference_results/graph_sources.csv,graph_language,five-run training comparison
+tab:component_benchmark,fixed,82.38541666666666,2.2971380917182214,reference_results/prototype/summary.csv,tep_main,five-run training comparison
+tab:component_benchmark,gat,77.60416666666666,1.760933657375832,reference_results/prototype/summary.csv,prototype_gat,five-run training comparison
+tab:component_benchmark,gcn,78.64236111111111,2.52117168489924,reference_results/prototype/summary.csv,prototype_gcn,five-run training comparison
+tab:component_benchmark,learned adjacency,81.37152777777777,2.3419810711398115,reference_results/learned_adjacency/task_results.csv,prototype_learned_adjacency,five-run training comparison
+tab:reliability_alternatives,Inverse-MSE,82.38541666666666,2.2971380917182183,reference_results/reliability/reliability_method_summary.csv,analyze.py reliability,fixed-prediction comparison
+tab:reliability_alternatives,Uniform,76.45138888888889,3.317280864519152,reference_results/reliability/reliability_method_summary.csv,analyze.py reliability,fixed-prediction comparison
+tab:reliability_alternatives,Relation-conditioned MSE,67.64930555555556,7.0829886558296185,reference_results/reliability/reliability_method_summary.csv,analyze.py reliability,fixed-prediction comparison
+tab:reliability_alternatives,Ledoit-Wolf Mahalanobis,33.885416666666664,1.2747950732493705,reference_results/reliability/reliability_method_summary.csv,analyze.py reliability,fixed-prediction comparison
+tab:semantic_intervention,direct,44.28819444444444,3.949643238694215,reference_results/propagation/semantic_summary.csv,semantic_direct,five-run training comparison
+tab:semantic_intervention,latent,78.44444444444443,2.86388880469339,reference_results/propagation/semantic_summary.csv,semantic_alignment,five-run training comparison
+tab:language_robustness,deepseek32_primary,80.66319444444443,3.6902551697128767,reference_results/language/summary.csv,language_deepseek,five-run training comparison
+tab:language_robustness,nomic_base,81.44097222222221,3.5880633013150462,reference_results/language/summary.csv,language_nomic,five-run training comparison
+tab:language_robustness,paper_main,82.38541666666666,2.2971380917182214,reference_results/language/summary.csv,tep_main,five-run training comparison
+tab:language_robustness,qwen14_concise,81.80208333333334,1.6511502841360213,reference_results/language/summary.csv,language_concise,five-run training comparison
+tab:loss_sensitivity,Attr-0.5x,81.34722222222223,2.6351913514428387,reference_results/loss/summary.csv,loss_attr-0p5x,five-run training comparison
+tab:loss_sensitivity,Attr-2x,80.85069444444443,2.2665061877252666,reference_results/loss/summary.csv,loss_attr-2x,five-run training comparison
+tab:loss_sensitivity,Center-0.5x,83.38194444444444,2.167060316358926,reference_results/loss/summary.csv,loss_center-0p5x,five-run training comparison
+tab:loss_sensitivity,Center-2x,78.61805555555556,1.9142386618984537,reference_results/loss/summary.csv,loss_center-2x,five-run training comparison
+tab:loss_sensitivity,Compatibility-0.5x,80.38888888888889,1.8519350386408469,reference_results/loss/summary.csv,loss_compatibility-0p5x,five-run training comparison
+tab:loss_sensitivity,Compatibility-2x,83.4375,1.0034211588314956,reference_results/loss/summary.csv,loss_compatibility-2x,five-run training comparison
+tab:loss_sensitivity,Default,82.38541666666666,2.2971380917182214,reference_results/loss/summary.csv,tep_main,five-run training comparison
+tab:loss_sensitivity,OffDiagonal-0.5x,80.11111111111111,2.549383256102719,reference_results/loss/summary.csv,loss_offdiagonal-0p5x,five-run training comparison
+tab:loss_sensitivity,OffDiagonal-2x,80.68402777777777,3.682082525230529,reference_results/loss/summary.csv,loss_offdiagonal-2x,five-run training comparison
+tab:loss_sensitivity,Reconstruction-0.1x,82.82291666666666,2.730130634466044,reference_results/loss/summary.csv,loss_reconstruction-0p1x,five-run training comparison
+tab:loss_sensitivity,Reconstruction-10x,79.84027777777779,2.980564535427088,reference_results/loss/summary.csv,loss_reconstruction-10x,five-run training comparison
+tab:tpts_reliability_boundary,uniform,73.05639642968329,1.247984573931613,reference_results/tpts/factorial_summary.csv,tpts_main,five-run training comparison
+tab:tpts_reliability_boundary,inverse_mse,72.68719676736876,1.179346199927949,reference_results/tpts/factorial_summary.csv,tpts_weighted,five-run training comparison
+graph removal,Expert20,81.48611111111111,2.548762484151336,reference_results/edge_training.csv,edges_expert20,five-run training comparison
+graph removal,Full46,82.38541666666666,2.2971380917182183,reference_results/edge_training.csv,edges_full46,five-run training comparison
+graph removal,Random20,80.39930555555556,2.9019033604560187,reference_results/edge_training.csv,edges_random20,five-run training comparison

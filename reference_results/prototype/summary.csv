@@ -1,0 +1,4 @@
+method,weighting,runs,mean_accuracy,std_accuracy
+fixed,inverse_mse,5,82.38541666666666,2.2971380917182214
+gat,inverse_mse,5,77.60416666666666,1.760933657375832
+gcn,inverse_mse,5,78.64236111111111,2.52117168489924

@@ -1,0 +1,23 @@
+{
+  "embed_model": "qwen3-embedding:0.6b-q8_0",
+  "class_order": [
+    "0000",
+    "1001",
+    "0110",
+    "1011",
+    "0111",
+    "1111"
+  ],
+  "embedding_shape": [
+    6,
+    1024
+  ],
+  "semantic_texts": {
+    "0000": "Normal operating condition in a three-phase power transmission system. No ground fault and no phase fault are present; phase currents and voltages remain balanced.",
+    "1001": "Single line-to-ground fault involving phase A and ground in a three-phase power transmission system. The fault causes abnormal phase-A current and voltage distortion relative to phases B and C.",
+    "0110": "Line-to-line fault between phases B and C in a three-phase power transmission system. The fault produces coupled current and voltage abnormalities on phases B and C without direct ground involvement.",
+    "1011": "Double line-to-ground fault involving phases A and B with ground in a three-phase power transmission system. The fault combines inter-phase coupling with a ground path.",
+    "0111": "Three-phase line fault involving phases A, B, and C without ground in a three-phase power transmission system. The fault produces coupled current and voltage abnormalities across all three phases without a ground-current path.",
+    "1111": "Three-phase-to-ground fault involving phases A, B, C and ground in a three-phase power transmission system. This severe fault produces broad current surges and voltage collapse across all phases."
+  }
+}

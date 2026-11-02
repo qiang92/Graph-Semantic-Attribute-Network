@@ -1,0 +1,5 @@
+configuration,weighting,runs,mean_accuracy,std_accuracy
+deepseek32_primary,inverse_mse,5,80.66319444444443,3.6902551697128767
+nomic_base,inverse_mse,5,81.44097222222221,3.5880633013150462
+paper_main,inverse_mse,5,82.38541666666666,2.2971380917182214
+qwen14_concise,inverse_mse,5,81.80208333333334,1.6511502841360213

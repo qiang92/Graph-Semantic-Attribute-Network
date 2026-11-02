@@ -1,0 +1,21 @@
+seed,method,deployable,mean_accuracy
+7,Inverse-MSE,True,81.92708333333333
+7,Ledoit-Wolf Mahalanobis,True,33.263888888888886
+7,Relation-conditioned MSE,True,76.90972222222223
+7,Uniform,True,75.64236111111111
+103,Inverse-MSE,True,80.60763888888889
+103,Ledoit-Wolf Mahalanobis,True,33.36805555555555
+103,Relation-conditioned MSE,True,71.64930555555556
+103,Uniform,True,71.51041666666667
+904,Inverse-MSE,True,84.89583333333333
+904,Ledoit-Wolf Mahalanobis,True,33.385416666666664
+904,Relation-conditioned MSE,True,58.92361111111111
+904,Uniform,True,80.03472222222221
+2026,Inverse-MSE,True,84.63541666666666
+2026,Ledoit-Wolf Mahalanobis,True,36.16319444444444
+2026,Relation-conditioned MSE,True,62.88194444444444
+2026,Uniform,True,78.90625
+3407,Inverse-MSE,True,79.86111111111111
+3407,Ledoit-Wolf Mahalanobis,True,33.24652777777777
+3407,Relation-conditioned MSE,True,67.88194444444444
+3407,Uniform,True,76.16319444444444

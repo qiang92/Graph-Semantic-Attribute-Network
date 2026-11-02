@@ -1,0 +1,3 @@
+method,weighting,mean_difference_pp,sd_difference_pp,positive_seeds
+gat,inverse_mse,-4.78125,3.152287307358372,1
+gcn,inverse_mse,-3.7430555555555514,4.354691344872216,1

@@ -1,0 +1,133 @@
+{
+  "generate_model": "qwen3:14b",
+  "embed_model": "qwen3-embedding:0.6b-q8_0",
+  "embedding_shape": [
+    15,
+    1024
+  ],
+  "class_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "records": [
+    {
+      "id": 1,
+      "name": "IDV1",
+      "title": "A/C feed ratio change with B composition constant",
+      "base_description": "A step disturbance changes the A/C feed ratio in stream 4 while the B composition remains constant. The fault affects reactant balance, reactor feed composition, reaction rate, recycle composition, and downstream separator and stripper behavior.",
+      "semantic_text": "A step disturbance originating from an upstream feed control valve or metering pump malfunction alters the A/C feed ratio in stream 4 while maintaining B composition constant. This fault directly impacts the reactor, downstream separator, and stripper, disrupting reactant balance, feed composition, and reaction kinetics. Propagated variables include reactor temperature, pressure, and product purity, with control loops for feed ratio, separator level, and stripper reflux experiencing deviations. This semantic prototype is useful for zero-shot diagnosis because it explicitly links a specific disturbance source to cascading effects on unit operations and control variables, enabling fault identification through pattern recognition of causal relationships without prior fault data."
+    },
+    {
+      "id": 2,
+      "name": "IDV2",
+      "title": "B composition change with A/C ratio constant",
+      "base_description": "A step disturbance changes the B composition in stream 4 while the A/C ratio remains constant. The inert component changes gas-phase dilution, reactor pressure, purge flow, recycle stream composition, and product separation behavior.",
+      "semantic_text": "A step disturbance in the feed composition of component B to stream 4, while maintaining the A/C ratio, acts as the disturbance source. This affects the reactor, purge system, recycle stream, and product separation units by altering gas-phase dilution, reactor pressure, and recycle composition. Propagated variables include reactor pressure, purge flow rate, and recycle stream B concentration, impacting control loops for pressure regulation, purge flow, and composition control. This semantic prototype is useful for zero-shot diagnosis because it explicitly links the inert component’s role in dilution and phase behavior to cascading effects on multiple variables and units, enabling inference of fault mechanisms without prior training on specific fault instances."
+    },
+    {
+      "id": 3,
+      "name": "IDV3",
+      "title": "D feed temperature step",
+      "base_description": "A step disturbance changes the D feed temperature. The thermal imbalance propagates to the reactor energy balance, reactor temperature control, reaction kinetics, condenser duty, separator temperature, and product quality measurements.",
+      "semantic_text": "A step disturbance in the D feed temperature originates from an upstream heating or cooling system malfunction. This disturbance propagates through the reactor energy balance, affecting reactor temperature control, reaction kinetics, condenser duty, and separator temperature, while ultimately altering product quality measurements. Key propagated variables include reactor temperature, condenser duty, and separator temperature, with associated control loops for reactor temperature and condenser duty being directly impacted. This semantic prototype is useful for zero-shot diagnosis because it explicitly maps the disturbance’s origin to its cascading effects on unit operations and control variables, enabling the identification of fault signatures through causal relationships without prior training on specific fault instances."
+    },
+    {
+      "id": 4,
+      "name": "IDV4",
+      "title": "Reactor cooling water inlet temperature step",
+      "base_description": "A step disturbance changes reactor cooling water inlet temperature. The fault directly perturbs reactor heat removal, reactor temperature, cooling water outlet temperature, reaction rate, pressure, recycle composition, and downstream separator conditions.",
+      "semantic_text": "A step disturbance in reactor cooling water inlet temperature originates from an external thermal anomaly or malfunction in the cooling system. This directly impacts the reactor unit, altering heat removal efficiency, and propagates to downstream separator operations. Key variables include reactor temperature, pressure, cooling water outlet temperature, and recycle stream composition, which may trigger deviations in temperature and pressure control loops. The semantic prototype captures the causal relationships between the disturbance source and cascading effects on process variables, enabling zero-shot diagnosis by aligning observed anomalies with predefined fault signatures. This structured representation allows models to infer fault mechanisms without prior training on specific failure scenarios, enhancing generalizability across unseen disturbances."
+    },
+    {
+      "id": 5,
+      "name": "IDV5",
+      "title": "Condenser cooling water inlet temperature step",
+      "base_description": "A step disturbance changes condenser cooling water inlet temperature. The fault affects condenser heat removal, separator temperature and pressure, vapor-liquid split, purge and recycle flow, and stripper feed composition.",
+      "semantic_text": "A step disturbance in condenser cooling water inlet temperature originates from external thermal fluctuations or cooling system failures. This affects the condenser’s heat removal capacity, leading to altered separator temperature and pressure, disrupted vapor-liquid split, and shifts in purge/recycle flow rates, ultimately modifying stripper feed composition. Propagated variables include separator temperature, pressure, and stripper feed composition, while control loops involving condenser temperature and separator pressure regulation are likely impacted. This semantic prototype is useful for zero-shot diagnosis as it explicitly maps the causal chain from the disturbance source to downstream unit operations, enabling inference of fault effects through prior knowledge of process dynamics and interdependencies, even without historical fault data."
+    },
+    {
+      "id": 6,
+      "name": "IDV6",
+      "title": "A feed loss",
+      "base_description": "A feed loss in stream 1 reduces reactant A entering the process. The fault changes reactor feed rate and composition, reaction conversion, reactor level and pressure, recycle demand, and product composition.",
+      "semantic_text": "A feed loss in stream 1, originating from a malfunction in the feed supply system, disrupts the delivery of reactant A to the reactor. This disturbance primarily affects the reactor and recycle system, altering feed rate, composition, and reaction conversion while impacting reactor level, pressure, and product quality. Propagated variables include reactor pressure control loops, level regulation, and recycle flow adjustments, which may trigger cascading effects on downstream separation units. This semantic prototype is useful for zero-shot diagnosis because it explicitly maps the causal relationships between the disturbance source and key process variables, enabling the identification of fault signatures through logical inference of dynamic interactions without prior fault data."
+    },
+    {
+      "id": 7,
+      "name": "IDV7",
+      "title": "C header pressure loss",
+      "base_description": "A pressure loss in the C feed header reduces availability of C feed in stream 4. The disturbance changes total feed, reactor feed composition, reaction balance, recycle flow, purge flow, and product separation.",
+      "semantic_text": "A pressure loss in the C feed header, caused by a blockage or valve malfunction, disrupts the supply of feedstock to stream 4. This disturbance impacts the reactor, separation unit, and recycle/purge systems, altering feed composition, reaction kinetics, and product distribution. Propagated variables include reactor feed flow, temperature, and pressure, as well as recycle and purge flow rates, which may trigger deviations in level and composition control loops. This semantic prototype enables zero-shot diagnosis by explicitly mapping the physical mechanism to measurable process variables, allowing the model to infer fault origins from deviations in key parameters without prior fault data, enhancing interpretability and generalization across unseen anomalies."
+    },
+    {
+      "id": 8,
+      "name": "IDV8",
+      "title": "A, B, and C feed composition change",
+      "base_description": "A random variation changes A, B, and C feed composition in stream 4. The fault creates coupled composition disturbances that affect reactor stoichiometry, purge composition, recycle composition, and product quality.",
+      "semantic_text": "The disturbance originates from a random fluctuation in the feed composition of streams A, B, and C in stream 4, introducing coupled variations in reactor stoichiometry, purge stream composition, and recycle stream quality. This affects the reactor, distillation columns, and product quality control systems, propagating anomalies in temperature, pressure, and composition measurements across key control loops. The semantic prototype captures the interdependencies between feed composition changes and downstream unit operations, enabling zero-shot diagnosis by aligning observed deviations with the fault’s signature patterns. Its structured representation of causal relationships allows models to infer the fault’s presence without prior training, enhancing robustness in unanticipated scenarios."
+    },
+    {
+      "id": 9,
+      "name": "IDV9",
+      "title": "D feed temperature random variation",
+      "base_description": "A random variation changes the D feed temperature. The disturbance creates time-varying thermal effects in the reactor, alters reaction kinetics, and propagates through condenser, separator, and stripper temperature measurements.",
+      "semantic_text": "The disturbance originates from random fluctuations in the D feed temperature, introducing unpredictable thermal perturbations into the reactor. These variations disrupt reaction kinetics, impacting product yield and quality, and propagate through the condenser, separator, and stripper, where temperature measurements deviate from nominal values. Affected control loops include reactor temperature regulation, condenser duty adjustment, and stripper pressure control, as thermal imbalances trigger compensatory actions. This semantic prototype is valuable for zero-shot diagnosis because it explicitly links the disturbance source to its cascading effects across unit operations, enabling models to infer fault mechanisms from prior knowledge of process physics without requiring labeled examples of the specific fault."
+    },
+    {
+      "id": 10,
+      "name": "IDV10",
+      "title": "C feed temperature random variation",
+      "base_description": "A random variation changes the C feed temperature. The fault introduces thermal fluctuations in stream 4, changing reactor heat balance, reaction rate, pressure, condenser load, and downstream separation quality.",
+      "semantic_text": "The disturbance source arises from an unstable external heat input or sensor malfunction affecting the C feed stream. This impacts the reactor, condenser, and downstream separation units, disrupting thermal equilibrium and reaction kinetics. Propagated variables include reactor temperature, pressure, condenser load, and product purity, with associated control loops for temperature regulation, pressure control, and distillation column setpoints. This semantic prototype enables zero-shot diagnosis by explicitly mapping the fault’s origin to its cascading effects on process variables and control systems, allowing models to infer fault signatures through causal reasoning without prior examples, enhancing generalizability across unseen anomalies."
+    },
+    {
+      "id": 11,
+      "name": "IDV11",
+      "title": "Reactor cooling water inlet temperature random variation",
+      "base_description": "A random variation affects reactor cooling water inlet temperature. The fault causes fluctuating reactor heat removal, reactor temperature, cooling water outlet temperature, reaction rate, and downstream recycle and separator responses.",
+      "semantic_text": "The disturbance originates from external fluctuations in the cooling water supply, such as utility system instability or valve malfunctions. This affects the reactor unit, downstream separator, and recycle streams, disrupting heat removal and reaction kinetics. Propagated variables include reactor temperature, cooling water outlet temperature, reaction rate, and separator composition, while control loops involving reactor temperature, cooling water flow, and separator level may exhibit instability. This semantic prototype enables zero-shot diagnosis by encoding the causal relationships between the random temperature disturbance and downstream process dynamics, allowing the model to infer fault presence from deviations in key variables and control loop behavior without prior fault-specific training data."
+    },
+    {
+      "id": 12,
+      "name": "IDV12",
+      "title": "Condenser cooling water inlet temperature random variation",
+      "base_description": "A random variation affects condenser cooling water inlet temperature. The fault changes condenser duty, separator pressure and temperature, vapor recycle, purge behavior, and liquid flow to the stripper.",
+      "semantic_text": "The disturbance originates from external fluctuations in condenser cooling water inlet temperature, disrupting heat exchange efficiency. Affected unit operations include the condenser, separator, vapor recycle system, purge system, and stripper. Propagated variables involve condenser duty, separator pressure and temperature, vapor flow rates, purge valve adjustments, and stripper feed flow. These changes may trigger deviations in temperature and pressure control loops, impacting distillation column stability. This semantic prototype enables zero-shot diagnosis by encoding the causal relationships between the disturbance source and downstream variables, allowing models to infer fault effects without prior examples. By mapping the fault’s influence on key process variables and control loops, it enhances interpretability and generalization for unseen anomalies in complex chemical processes."
+    },
+    {
+      "id": 13,
+      "name": "IDV13",
+      "title": "Reaction kinetics slow drift",
+      "base_description": "A slow drift changes reaction kinetics inside the reactor. The fault modifies conversion, heat generation, reactor temperature, pressure, component concentrations, recycle composition, and final product quality.",
+      "semantic_text": "The disturbance source stems from a gradual catalyst deactivation or temperature sensor drift within the reactor, altering the reaction rate. Affected unit operations include the reactor, distillation column, and heat exchanger, as well as recycle stream handling. Propagated variables encompass reactor temperature, pressure, conversion efficiency, and component concentrations, with potential impacts on distillation column composition control loops and heat exchanger duty. This semantic prototype is useful for zero-shot diagnosis because it explicitly links the slow kinetic drift to measurable process variables and control loop behaviors, enabling inference of the fault’s origin even without prior training data by leveraging causal relationships inherent in the process dynamics."
+    },
+    {
+      "id": 14,
+      "name": "IDV14",
+      "title": "Reactor cooling water valve sticking",
+      "base_description": "The reactor cooling water valve sticks and limits effective heat-removal control action. The fault affects manipulated cooling water flow, reactor temperature, cooling water outlet temperature, pressure, reaction rate, and downstream separation behavior.",
+      "semantic_text": "The disturbance source arises from mechanical failure of the reactor cooling water valve, causing restricted flow and impaired heat transfer. Affected unit operations include the reactor and downstream separation systems, where thermal and pressure imbalances disrupt process stability. Propagated variables encompass cooling water flow rate, reactor temperature, cooling water outlet temperature, system pressure, reaction kinetics, and distillation efficiency, with associated control loops for temperature and flow regulation. This semantic prototype enables zero-shot diagnosis by explicitly mapping the valve’s mechanical failure to cascading thermodynamic and process dynamics, allowing inference of fault effects through causal relationships without prior fault data, thereby enhancing interpretability and generalization in unseen scenarios."
+    },
+    {
+      "id": 15,
+      "name": "IDV15",
+      "title": "Condenser cooling water valve sticking",
+      "base_description": "The condenser cooling water valve sticks and limits condenser temperature control action. The fault changes condenser cooling flow, separator temperature and pressure, vapor-liquid split, recycle and purge rates, and stripper feed conditions.",
+      "semantic_text": "The disturbance source is a mechanical failure in the condenser cooling water valve, causing restricted flow and impaired temperature regulation. Affected unit operations include the condenser, separator, and stripper, with impacts on vapor-liquid split, recycle/purge rates, and stripper feed conditions. Propagated variables involve condenser cooling flow, separator temperature and pressure, and control loops related to condenser temperature, separator pressure, and vapor-liquid equilibrium. This semantic prototype enables zero-shot diagnosis by explicitly linking the mechanical fault to its cascading effects on process variables and control systems, allowing models to infer fault presence from deviations in these interconnected parameters without prior training on specific fault instances."
+    }
+  ],
+  "created_at_unix": 1780895451.2903059
+}

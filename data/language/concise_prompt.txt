@@ -1,0 +1,6 @@
+Describe the physical mechanism of the following Tennessee Eastman Process fault for engineering fault diagnosis.
+
+Fault: {name} - {title}
+Known definition: {base_description}
+
+Write one concise English paragraph of 55-85 words. State the disturbance source, the directly affected process unit, and the main downstream variables. Use only information supported by the known definition. Do not add diagnosis instructions, lists, markdown, citations, or Chinese text. Return only the paragraph.

@@ -1,0 +1,9 @@
+seed,task,method,gamma,pseudo_unseen_h,seen_accuracy,unseen_accuracy,harmonic_mean,seen_test_samples,unseen_test_samples,origin
+103,1,Uncalibrated,0.0,22.090100882939012,52.083333333333336,0.0,0.0,1152,1440,current environment recovery training
+103,1,Seen-only calibrated,1.5,22.090100882939012,18.75,33.263888888888886,23.981975967957272,1152,1440,current environment recovery training
+103,2,Uncalibrated,0.0,19.51989478451211,30.729166666666668,0.0,0.0,1152,1440,current environment recovery training
+103,2,Seen-only calibrated,2.5,19.51989478451211,17.96875,33.40277777777778,23.36726934775262,1152,1440,current environment recovery training
+103,3,Uncalibrated,0.0,27.58091087589988,48.87152777777777,4.375,8.031056406912294,1152,1440,current environment recovery training
+103,3,Seen-only calibrated,1.5,27.58091087589988,38.715277777777786,44.58333333333333,41.44261497846325,1152,1440,current environment recovery training
+103,4,Uncalibrated,0.0,26.92205631396241,40.798611111111114,0.0,0.0,1152,1440,current environment recovery training
+103,4,Seen-only calibrated,3.0,26.92205631396241,19.704861111111107,57.777777777777786,29.387307989145317,1152,1440,current environment recovery training

@@ -1,0 +1,12 @@
+You are writing compact physical-mechanism descriptions for a Tennessee Eastman Process zero-shot fault diagnosis paper.
+
+Fault: {name} - {title}
+Base description: {base_description}
+
+Write one final paragraph in English, 90-130 words. Include:
+1. disturbance source,
+2. affected unit operations,
+3. likely propagated variables or control loops,
+4. why this semantic prototype is useful for zero-shot diagnosis.
+
+Do not include chain-of-thought, lists, markdown, citations, or Chinese text. Return only the paragraph.

@@ -1,0 +1,133 @@
+{
+  "generate_model": "qwen3:14b",
+  "embed_model": "qwen3-embedding:0.6b-q8_0",
+  "class_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "options": {
+    "temperature": 0.2,
+    "top_p": 0.9,
+    "num_predict": 700
+  },
+  "records": [
+    {
+      "id": 1,
+      "name": "IDV1",
+      "title": "A/C feed ratio change with B composition constant",
+      "base_description": "A step disturbance changes the A/C feed ratio in stream 4 while the B composition remains constant. The fault affects reactant balance, reactor feed composition, reaction rate, recycle composition, and downstream separator and stripper behavior.",
+      "semantic_text": "A step disturbance in stream 4 alters the A/C feed ratio while maintaining constant B composition, directly affecting the reactor. This disrupts reactant balance, altering reactor feed composition and reaction rate. Downstream, recycle composition shifts, impacting separator and stripper behavior through changes in component distribution and phase separation efficiency."
+    },
+    {
+      "id": 2,
+      "name": "IDV2",
+      "title": "B composition change with A/C ratio constant",
+      "base_description": "A step disturbance changes the B composition in stream 4 while the A/C ratio remains constant. The inert component changes gas-phase dilution, reactor pressure, purge flow, recycle stream composition, and product separation behavior.",
+      "semantic_text": "A step disturbance in the inert component concentration in stream 4 causes a change in B composition while maintaining the A/C ratio. The reactor is directly affected, altering gas-phase dilution, which impacts reactor pressure, purge flow rate, recycle stream composition, and product separation efficiency. These changes propagate through downstream units, modifying process dynamics and separation outcomes."
+    },
+    {
+      "id": 3,
+      "name": "IDV3",
+      "title": "D feed temperature step",
+      "base_description": "A step disturbance changes the D feed temperature. The thermal imbalance propagates to the reactor energy balance, reactor temperature control, reaction kinetics, condenser duty, separator temperature, and product quality measurements.",
+      "semantic_text": "The disturbance source is a step change in D feed temperature, directly affecting the reactor. This thermal imbalance disrupts reactor energy balance, temperature control, and reaction kinetics, propagating to condenser duty, separator temperature, and product quality measurements. Key downstream variables include reactor temperature, condenser duty, separator temperature, and product quality."
+    },
+    {
+      "id": 4,
+      "name": "IDV4",
+      "title": "Reactor cooling water inlet temperature step",
+      "base_description": "A step disturbance changes reactor cooling water inlet temperature. The fault directly perturbs reactor heat removal, reactor temperature, cooling water outlet temperature, reaction rate, pressure, recycle composition, and downstream separator conditions.",
+      "semantic_text": "The IDV4 fault arises from a step disturbance in reactor cooling water inlet temperature, directly affecting the reactor by altering heat removal. This perturbs reactor temperature, cooling water outlet temperature, reaction rate, pressure, recycle composition, and downstream separator conditions. The disturbance source is the abrupt change in cooling water temperature, which propagates through the reactor and impacts downstream process variables as defined."
+    },
+    {
+      "id": 5,
+      "name": "IDV5",
+      "title": "Condenser cooling water inlet temperature step",
+      "base_description": "A step disturbance changes condenser cooling water inlet temperature. The fault affects condenser heat removal, separator temperature and pressure, vapor-liquid split, purge and recycle flow, and stripper feed composition.",
+      "semantic_text": "A step disturbance in condenser cooling water inlet temperature originates from external changes in cooling water supply. This directly impacts the condenser, altering heat removal efficiency. Downstream effects include variations in separator temperature and pressure, vapor-liquid split ratios, purge and recycle flow rates, and stripper feed composition due to disrupted thermal and mass balances."
+    },
+    {
+      "id": 6,
+      "name": "IDV6",
+      "title": "A feed loss",
+      "base_description": "A feed loss in stream 1 reduces reactant A entering the process. The fault changes reactor feed rate and composition, reaction conversion, reactor level and pressure, recycle demand, and product composition.",
+      "semantic_text": "The disturbance source is a feed loss in stream 1, reducing reactant A input. The directly affected unit is the reactor, as its feed rate and composition change. Main downstream variables include reactor conversion, level, pressure, recycle demand, and product composition, due to altered reaction dynamics and material balances."
+    },
+    {
+      "id": 7,
+      "name": "IDV7",
+      "title": "C header pressure loss",
+      "base_description": "A pressure loss in the C feed header reduces availability of C feed in stream 4. The disturbance changes total feed, reactor feed composition, reaction balance, recycle flow, purge flow, and product separation.",
+      "semantic_text": "The disturbance source is a pressure loss in the C feed header, directly affecting the reactor by reducing stream 4's availability. This alters total feed, reactor feed composition, reaction balance, recycle flow, purge flow, and product separation. The reduced C feed disrupts stoichiometric ratios, impacting downstream separation efficiency and process stability."
+    },
+    {
+      "id": 8,
+      "name": "IDV8",
+      "title": "A, B, and C feed composition change",
+      "base_description": "A random variation changes A, B, and C feed composition in stream 4. The fault creates coupled composition disturbances that affect reactor stoichiometry, purge composition, recycle composition, and product quality.",
+      "semantic_text": "The disturbance source is a random variation in the feed composition of streams A, B, and C in stream 4. The reactor is directly affected due to altered stoichiometry from the composition changes. Main downstream variables include purge composition, recycle composition, and product quality, as the coupled disturbances propagate through the process."
+    },
+    {
+      "id": 9,
+      "name": "IDV9",
+      "title": "D feed temperature random variation",
+      "base_description": "A random variation changes the D feed temperature. The disturbance creates time-varying thermal effects in the reactor, alters reaction kinetics, and propagates through condenser, separator, and stripper temperature measurements.",
+      "semantic_text": "The disturbance source is random variation in D feed temperature, directly affecting the reactor by inducing time-varying thermal effects. These alter reaction kinetics and propagate through the process, primarily impacting condenser, separator, and stripper temperature measurements as downstream variables."
+    },
+    {
+      "id": 10,
+      "name": "IDV10",
+      "title": "C feed temperature random variation",
+      "base_description": "A random variation changes the C feed temperature. The fault introduces thermal fluctuations in stream 4, changing reactor heat balance, reaction rate, pressure, condenser load, and downstream separation quality.",
+      "semantic_text": "The disturbance source is random fluctuations in the temperature of stream 4’s C feed. This directly affects the reactor, altering its heat balance and reaction rate. Downstream variables include reactor pressure, condenser load, and separation quality, as thermal changes propagate through the process, disrupting equilibrium and efficiency."
+    },
+    {
+      "id": 11,
+      "name": "IDV11",
+      "title": "Reactor cooling water inlet temperature random variation",
+      "base_description": "A random variation affects reactor cooling water inlet temperature. The fault causes fluctuating reactor heat removal, reactor temperature, cooling water outlet temperature, reaction rate, and downstream recycle and separator responses.",
+      "semantic_text": "The disturbance source is random fluctuations in reactor cooling water inlet temperature, directly affecting the reactor. This alters heat removal, causing reactor temperature and cooling water outlet temperature variations. Reaction rate changes propagate to downstream units, impacting recycle stream composition and separator performance through altered product distributions and phase equilibria."
+    },
+    {
+      "id": 12,
+      "name": "IDV12",
+      "title": "Condenser cooling water inlet temperature random variation",
+      "base_description": "A random variation affects condenser cooling water inlet temperature. The fault changes condenser duty, separator pressure and temperature, vapor recycle, purge behavior, and liquid flow to the stripper.",
+      "semantic_text": "The disturbance source is random variation in condenser cooling water inlet temperature, directly affecting the condenser. This alters condenser duty, causing changes in separator pressure and temperature, vapor recycle rates, purge behavior, and liquid flow to the stripper. The fault propagates through heat transfer and mass balance disruptions, impacting downstream process stability and control."
+    },
+    {
+      "id": 13,
+      "name": "IDV13",
+      "title": "Reaction kinetics slow drift",
+      "base_description": "A slow drift changes reaction kinetics inside the reactor. The fault modifies conversion, heat generation, reactor temperature, pressure, component concentrations, recycle composition, and final product quality.",
+      "semantic_text": "The disturbance source is a slow drift in reaction kinetics within the reactor, altering the rate of chemical transformations. The directly affected process unit is the reactor, where changes in kinetics impact conversion, heat generation, and temperature. Downstream variables include reactor pressure, component concentrations, recycle stream composition, and final product quality, as the altered kinetics propagate through the process, affecting both thermal and compositional balances."
+    },
+    {
+      "id": 14,
+      "name": "IDV14",
+      "title": "Reactor cooling water valve sticking",
+      "base_description": "The reactor cooling water valve sticks and limits effective heat-removal control action. The fault affects manipulated cooling water flow, reactor temperature, cooling water outlet temperature, pressure, reaction rate, and downstream separation behavior.",
+      "semantic_text": "The disturbance source is a stuck reactor cooling water valve, restricting heat-removal capacity. The directly affected unit is the reactor, where impaired cooling water flow disrupts thermal regulation. Main downstream variables include reactor temperature, cooling water outlet temperature, pressure, reaction rate, and downstream separation efficiency, as heat transfer limitations propagate through the process."
+    },
+    {
+      "id": 15,
+      "name": "IDV15",
+      "title": "Condenser cooling water valve sticking",
+      "base_description": "The condenser cooling water valve sticks and limits condenser temperature control action. The fault changes condenser cooling flow, separator temperature and pressure, vapor-liquid split, recycle and purge rates, and stripper feed conditions.",
+      "semantic_text": "The disturbance source is the condenser cooling water valve sticking, which directly affects the condenser by restricting cooling flow. This disrupts condenser temperature control, altering separator temperature and pressure, vapor-liquid split, recycle and purge rates, and stripper feed conditions. The fault propagates through changes in heat transfer efficiency and fluid dynamics within the condenser, impacting downstream units via altered process variables."
+    }
+  ]
+}

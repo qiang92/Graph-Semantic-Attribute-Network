@@ -1,0 +1,4 @@
+﻿method,mean,sd,n,repeated_training
+signal_only_raw_NB,65.83617836241649,0.0,1,False
+graph_guided_uniform_NB,73.05639642968329,1.2479845739316133,5,True
+paired_gain_pp,7.220218067266799,1.2479845739316133,5,True

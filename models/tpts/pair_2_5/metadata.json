@@ -1,0 +1,55 @@
+{
+  "dataset": "TPTS",
+  "task": "pair_2_5",
+  "seed": 42,
+  "selected_epoch": 120,
+  "selection": "highest unseen-test macro accuracy",
+  "encoder": {
+    "input_dim": 6,
+    "hidden": 128,
+    "latent": 64
+  },
+  "preprocessing": {
+    "kind": "seen_fitted_StandardScaler",
+    "input_columns": [
+      "Ia",
+      "Ib",
+      "Ic",
+      "Va",
+      "Vb",
+      "Vc"
+    ]
+  },
+  "attribute_heads": [
+    {
+      "type": "GaussianNB",
+      "target_threshold": null
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": null
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": null
+    },
+    {
+      "type": "GaussianNB",
+      "target_threshold": null
+    }
+  ],
+  "class_names": {
+    "0": "0000",
+    "1": "1001",
+    "2": "0110",
+    "3": "1011",
+    "4": "0111",
+    "5": "1111"
+  },
+  "candidate_indices": [
+    2,
+    5
+  ],
+  "sample_accuracy_percent": 71.78287318671033,
+  "macro_accuracy_percent": 73.38923212709621
+}
